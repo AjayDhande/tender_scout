@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  tenderTitle: MyString
+  countryList: 
+  keywordList: 
+  valueFrom: 1
+  valueTo: 1
+  codeList: 
+  buyerList: 
+  statusList: 
+
+two:
+  title: MyString
+  tenderTitle: MyString
+  countryList: 
+  keywordList: 
+  valueFrom: 1
+  valueTo: 1
+  codeList: 
+  buyerList: 
+  statusList: 

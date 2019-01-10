@@ -1,0 +1,3 @@
+s3_credentials:
+  access_key_id: <%= PASSWORDS['s3_stage']['access_key_id'] %>
+  secret_access_key: <%= PASSWORDS['s3_stage']['secret_access_key'] %>

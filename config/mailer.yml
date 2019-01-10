@@ -1,0 +1,54 @@
+default: &default
+  from: 'tony@tenderscout.com'  #FIXME support@tenderscout.com
+  company_name: 'TenderScout'
+  company_address: '20 Harcourt Street, Dublin 2, Ireland'
+  admin_email: 'anton.rogachevskyi@braincode.xyz'
+  product_url: 'http://dev.tenderscout.braincode.xyz'
+  support: 'https://tenderscoutsupport.zendesk.com'
+  tender_management_url: 'http://tender_management_url'
+  api_url: 'http://api.dev.tenderscout.braincode.xyz'
+  reset_password_link: 'http://dev.tenderscout.braincode.xyz/auth/reset?reset_password_token=%{token}'
+  admin_url: 'http://admin.dev.tenderscout.braincode.xyz'
+  all_results_url: 'http://dev.tenderscout.braincode.xyz/monitor/results/all'
+  templates:
+    password_reset: '8922902'
+    supplier_invite: '8923197'
+    sign_up_request: '8922899'
+    sign_up_process: '8923194'
+    tender_publish: '8923196'
+    assignment_invite: '8922900'
+    user_confirmation: '8923193'
+    admin_assistance_notifier: '9178405'
+    user_upgrade_request: '9274146'
+    empty_summary_tenders: '9428393'
+    summary_tenders: '9428058'
+  uri:
+    admin_sign_up: '/users/signup-requests'
+    tender_details: ''
+
+development:
+  <<: *default
+
+staging:
+  <<: *default
+
+test:
+  <<: *default
+
+alpha_staging:
+  <<: *default
+
+production:
+  <<: *default
+  from: 'support@tenderscout.com'
+  company_name: 'Company Name'
+  company_address: 'Company Address'
+  admin_email: 'anton.rogachevskyi@braincode.xyz'
+  product_url: 'http://hub.tenderscout.com'
+  support: 'http://tenderscout.support.com'
+  reset_password_link: 'https://hub.tenderscout.com/auth/reset?reset_password_token=%{token}'
+  tender_management_url: 'http://tender_management_url'
+  api_url: 'http://hub.tenderscout.com/api/'
+  all_results_url: 'http://hub.tenderscout.com/monitor/results/all'
+  tender_details_url: 'http://hub.tenderscout.com/tenders/%{id}'
+  admin_url: 'http://adminhub.tenderscout.com'

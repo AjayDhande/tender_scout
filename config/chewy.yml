@@ -1,0 +1,9 @@
+# config/chewy.yml
+# separate environment configs
+test:
+  host: 'localhost:9200'
+  prefix: 'test'
+development:
+  host: 'localhost:9200'
+production:
+  host: 'https://search-braincode-tenderscout-prod-tgpk2hg3u63uppdm2mlfechxcq.us-east-1.es.amazonaws.com'

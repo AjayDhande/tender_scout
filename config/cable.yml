@@ -1,0 +1,20 @@
+development:
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: tenderscout-api_development
+alpha_staging:
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: tenderscout-api_development
+staging:
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: tenderscout-api_development
+
+test:
+  adapter: async
+
+production:
+  adapter: redis
+  url: redis://localhost:6379/1
+  channel_prefix: tenderscout-api_production
